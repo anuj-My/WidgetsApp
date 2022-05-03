@@ -7,9 +7,11 @@ import Translate from "./components/Translate";
 import { data, options } from "./data.js";
 import Route from "./components/Route";
 import Header from "./components/Header";
+import ShowOutput from "./components/ShowOutput";
 
 function App() {
   const [selected, setSelected] = useState(options[0]);
+
   return (
     <div className="App ui container">
       <Header />
@@ -28,6 +30,7 @@ function App() {
           onSelectedChange={setSelected}
           options={options}
         />
+        <ShowOutput selected={selected} />
       </Route>
 
       <Route path="/translate">

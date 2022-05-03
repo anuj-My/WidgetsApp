@@ -6,7 +6,6 @@ import { languageOptions } from "../data";
 export default function Translate() {
   const [language, setLanguage] = useState(languageOptions[0]);
   const [text, setText] = useState("");
-  console.log(text);
   return (
     <div>
       <div className="ui form">

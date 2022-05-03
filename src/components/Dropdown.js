@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from "react";
-
 export default function Dropdown({
   options,
   label,
@@ -57,12 +56,6 @@ export default function Dropdown({
             {renderedOptions}
           </div>
         </div>
-      </div>
-      <div className="ui segment">
-        <h1 className="ui header"> Output</h1>
-        <p style={{ color: selected.value }} className="ui header">
-          I am which Color?
-        </p>
       </div>
     </div>
   );
